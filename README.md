@@ -38,6 +38,9 @@ customerData.GetHtml(includeStyleHeader:true,
 
 Please note that raw JSON of row data is included in the html.
 
+[https://www.nuget.org/packages/HObjectToHtml/](https://www.nuget.org/packages/HObjectToHtml/)
+
+
 ```c#
 static void Main(string[] args)
         {
