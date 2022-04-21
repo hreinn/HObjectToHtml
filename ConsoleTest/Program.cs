@@ -1,43 +1,16 @@
+﻿using HObjectToHtml;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-# HObjectToHtml - c# object to HTML 
-
-Converts a c# object to html with some optional formatting.
-
-This is ancient code that I use quite a lot.  Handy for debugging and sending simple lists with links via email.
-Inspired by LINQpads .Dump() function.
-
-Simple example:
-
-```c#
-
-var customerData = GetCustomerData();
-//true includes styling in the header.
-customerData.GetHtml(true);
-
-// returns https://i.imgur.com/srpKGsX.png
-```
-![No setup](https://i.imgur.com/srpKGsX.png)
-
-With column setup we can hide and create links.
-
-```c#
-customerData.GetHtml(includeStyleHeader:true,	
-	columnSetup:ColumnSetup.List(
-		ColumnSetup.Hide("PhoneNo_"),
-        ColumnSetup.Hide("PreferredBankAccountCode"),
-        ColumnSetup.Hide("GlobalDimension2Code"),
-		ColumnSetup.Hide("ExternalDocumentNo_"),
-		ColumnSetup.ForUrlNewWindow("GlobalDimension1Code","https://www.google.com/search?q={0} {Name}")		
-	));
-//returns https://i.imgur.com/JPHZmLG.png
-
-```
-![With column setup](https://i.imgur.com/srpKGsX.png)
-
-Please note that raw JSON of row data is included in the html.
-
-```c#
-static void Main(string[] args)
+namespace ConsoleTest
+{
+    internal class Program
+    {
+        static void Main(string[] args)
         {
 			var obj = new
 			{
@@ -90,4 +63,5 @@ static void Main(string[] args)
 		ColumnSetup.ForUrlNewWindow("Email","mailto:{0}"),
 			}, filename: @"c:\tmp\test-withsetup.html");
 		}
-```		
+    }
+}
