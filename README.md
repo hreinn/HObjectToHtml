@@ -5,6 +5,7 @@ Converts a c# object to html with some optional formatting.
 
 This is ancient code that I use quite a lot.  Handy for debugging and sending simple lists with links via email.
 Inspired by LINQpads .Dump() function.
+
 (There is functionality in the source that is not in use - this project needs some cleanup - is buggy if you have Column names that are duplicate in subtables - if using columnsetup for those columns.)
 
 Simple example:
