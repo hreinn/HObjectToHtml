@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>HObjectToHtml</id>
+    <version>1.0.0</version>
+    <title>Convert c# objects to html - recursively.</title>
+    <authors>Hreinn Agustsson</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>    
+    <description>Convert c# objects to html - recursively.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright ©  2022</copyright>
+    <tags>c# object2html table dump</tags>
+  </metadata>
+</package>
