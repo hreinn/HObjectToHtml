@@ -34,7 +34,7 @@ customerData.GetHtml(includeStyleHeader:true,
 //returns https://i.imgur.com/JPHZmLG.png
 
 ```
-![With column setup](https://i.imgur.com/srpKGsX.png)
+![With column setup](https://i.imgur.com/fnuJya4.png)
 
 Please note that raw JSON of row data is included in the html.
 
