@@ -91,3 +91,5 @@ static void Main(string[] args)
 			}, filename: @"c:\tmp\test-withsetup.html");
 		}
 ```		
+Gives you:
+![With column setup](https://i.imgur.com/WxHMohw.png)
